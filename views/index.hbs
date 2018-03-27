@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel = "stylesheet" href = "../public/css/index.css">
+  <title>Form</title>
+</head>
+<body>
+
+  <p>Form</p>
+
+  <div class = "super-parent">
+    <div class = "form-parent">
+      <form method = "POST" action = "send">
+        <label>Enter name:</label>
+        <input type="text" name = "name" value="John Doe" placeholder="Name" id = "name">
+
+        <br><br>
+
+        <label>Enter contact no:</label>
+        <input type="number" name="contactNo" value="9897887871" placeholder="Contact No" id = "contact">
+
+        <br><br>
+
+        <label>Enter email:</label>
+        <input type="email" name = "email" value = "test.test@gmail.com" placeholder="Email" id = "email">
+
+        <br><br>
+
+        <label>Enter message:</label>
+        <input placeholder="Message" id = "message" name = "message" value="Message from nodemailer">
+
+        <br><br>
+
+        <input type="submit" class = "ripple" value="Submit">
+      </form>
+    </div>
+  </div>
+
+  {{msg}}
+
+</body>
+</html>
